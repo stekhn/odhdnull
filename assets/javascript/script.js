@@ -84,6 +84,7 @@ $( document ).ready(function(){
     $('#group_child_result').text(units);
     $('#group_child_addition').show('slow');
     $('#group_user_input').show('slow');
+    $('#sharing-button-wrapper').show('slow');
   });
 
 
