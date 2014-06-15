@@ -11,7 +11,7 @@ $( document ).ready(function(){
 	  decimal : '.' 
 	};
 
-	var demo = new countUp("count", 0, 10800000000, 0, 2.5, options);
+	var demo = new countUp("count", 0, 14216790000, 0, 1.5, options);
 	demo.start();
 
 	/**

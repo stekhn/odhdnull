@@ -26,10 +26,11 @@ button {
 	width: 100px;
 }
 
-#count {
+.count {
 	font-size: 100px;
-	margin: 0;
 	color: #4d63bc;
 	font-weight: 300;
 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	display: inline-block;
+	margin-right: 30px;
 }
