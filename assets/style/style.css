@@ -6,10 +6,22 @@ body {
 	background-color: lightgrey;
 }
 
+#first {
+	display: inline-block;
+}
+
+button {
+	display: block;
+}
+
 #page {
 	width: 1024px;
 	margin: 0 auto;
 	background-color: white;
 	border-radius: 5px;
 	padding: 20px;
+}
+
+.bus {
+	width: 100px;
 }

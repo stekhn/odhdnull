@@ -12,16 +12,20 @@
 		<header><h1>Yeah!</h1>
 			<p>Vorspann</p>
 		</header>
-		<div id="first" class="cloneObj">bla</div>
+		<div id="data">
+			<div id="first" class="cloneObj">
+				<img src="images/bus.jpg" class="bus" />
+			</div>
+		</div>
 		<button id="button">click</button>
 	</div>
 <script type="text/javascript">
  $('#button').click(function(){
-    for (i = 0; i < 100; i++) {
-        var $new = $("#first").clone().appendTo("body").hide();
-        $new.show('slow');
-        }
-    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    for (i = 0; i < 1000; i++) {
+        var $new = $("#first").clone().appendTo("#data").hide();
+        $new.show();
+    }
+    $("body").animate({ scrollTop: $(document).height() }, 1000);
 });
 </script>
 </body>
