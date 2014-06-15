@@ -99,7 +99,7 @@ button:hover {
 	opacity: 0.5;
 }
 
-.bus {
+.bus, .nurse {
 	width: 100px;
 	display: inline-block;
 }
