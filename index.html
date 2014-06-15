@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dataviz Null</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="assets/javascript/libs/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="assets/javascript/libs/countUp.js"></script>
+	<script type="text/javascript" src="assets/javascript/libs/d3.v3.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/libs/nv.d3.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/libs/countUp.js"></script>
+	<script type="text/javascript" src="assets/javascript/script.js"></script>
+	<script type="text/javascript" src="assets/javascript/sharing.js"></script>
+	<script type="text/javascript" src="assets/javascript/piechart.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/style/reset.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/style/sharing.css">
+	<link rel="stylesheet" type="text/css" href="assets/javascript/libs/nv.d3.min.css">
+</head>
+<body>
+	<div id="page">
+		<div id="flags">
+						<img class="flags" src="images/english.png" alt="Change language to English" />
+						<img class="flags" src="images/german.png" alt="Change language to German"/>
+						<img class="flags" src="images/portuguese.png" alt="Change language to Portuguese"/>
+		</div>
+		<div id="content">
+			<header>
+				<div id="heading">Brazillion</div>
+				<div id="subheading">How the world cup billions could have helped Brazil.</div>
+			</header>
+			<section id="prequel">
+				<p>
+					Back in 2007, Brazil was elected to host the FIFA soccer World Cup in 2014. Since then, countless projects were started to ensure that the world cup will be a figurehead for brazil and it's economic growth. Stadiums, training camps, hotels and airports have been build all over the country. The Federal Office Of Statistics in brazil, estimates that the costs for the world cup will ad up to the enormous sum of 11.2 billion US$.
+				</p>
+			</section>
+			<div class="count" id="count"></div><div class="count">$</div>
+			<section id="basic_stats">
+
+				<p>
+					Im evendae volor auditis dus ipsumet quibusa menihitatur:
+				</p>
+				<svg style="height:300px; width:640px;" id="chart"></svg>
+				<p>
+					Even though soccer is a religion in Brazil, not everybody welcomed the decision of the nation hosting the world cup. As Brazil is still a threshold country, we (like many Brazilians) were wondering if there weren't any better options to invest the money.
+				</p>
+			</section>
+			<div id="data">
+				<div id="group_nurse">
+					<div class="stat_heading">
+						How many Nurses could have been employed for a year?
+					</div>
+					<p>Brazilians are unsatisfied with their health care system. How many nurses do you think could have been hired in one year with 11.2 billion $?</p>
+					<button id="button_nurse">Show me</button>
+					<div id="first_nurse" class="cloneObj">
+						<img src="images/nurse.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_nurse_addition" class="result_text">
+						<p><span id="group_nurse_result" class="result_value"></span> nurses could have been hired for a year.</p>
+						<p>A survey by the polling institute Ibope shows that the public health system in brazil is the most criticized political topic in brazil. The average waiting time for cancer treatment was about 6 month in 2013. Especially in the rural areas of Brazil, health care is still underdeveloped. Based on statistics from accounting firm Deloitte, one additional nurse would cost 15852 US $ per year.</p>
+					</div>
+				</div>
+
+				<div id="group_administration_assistant" style="display: none;">
+					<div class="stat_heading">
+						How many Administration Assistants could have been employed for a year?
+					</div>
+					<p>Brazil has difficulties in distributing their household funds because of a lack of staff in public administration. How many Administration Assistants do you think could have been hired in one year with 11.2 billion $?</p>
+					<button id="button_administration_assistant">Show me</button>
+					<div id="first_administration_assistant" class="cloneObj">
+						<img src="images/administration.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_administration_assistant_addition" class="result_text">
+						<p><span id="group_administration_assistant_result" class="result_value"></span> Administration Assistants could have been hired for a year.
+						</p>
+						<p>Public administration is a big issue in Brasil. Corruption and a lack of qualified staff are causing problems in the distribution of fundings. In 2012 for example, only 27% of the household's budget for health care was spend because the public administration wasn't able to allocate it properly. In the 2012 Corruption Perceptions Index, Brazil scored 43.That meant tying with South Africa and performing more poorly than Cuba. Corruption was one of the issues that lead to the huge civilian protests in 2013. Based on statistics from accounting firm Deloitte, one additional administration assistant would cost 8400 US $ per year.
+						</p>
+					</div>
+				</div>
+
+				<div id="group_bus" style="display: none;">
+					<div class="stat_heading">
+						How many Busdrivers could have been employed for a year?
+					</div>
+					<p>In 2014, people in Rio de Janeiro protested against high public transportation fees and too few busses in the city. How many bus drivers do you think could have been hired in one year with 11.2 billion $?</p>
+					<button id="button_bus">Show me</button>
+					<div id="first_bus" class="cloneObj">
+						<img src="images/bus.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_bus_addition" class="result_text">
+						<p><span id="group_bus_result" class="result_value"></span> Bus Drivers could have been hired for a year.</p>
+						<p>The average wages in Brazil are less than a quarter compared to German salaries. Although public transportation is an important sector in Brazilian everyday life, bus drivers only earn a salary of 553 US$ while the minimum wage guarantees 305 US$. In 2014, a price increase on bus tickets (about 1,35 US$ for a ticket) contributed in protests among the citizens of Rio de Janeiro. Rio now belongs to one of the most expensive Brazilian cities concerning public transportation by bus. Many communters depend on using public transportation and cannot afford higher ticket prices. The visualization shows, how much potential 11.5 Billion US $ have in tackling the biggest issues in brazil.</p>
+					</div>
+				</div>
+
+				<div id="group_social" style="display: none;">
+					<div class="stat_heading">
+						How many Sozial could have been employed for a year?
+					</div>
+					<p>Many people in Brasil live under miserable circumstances. How many people do you think, could have been provided with social welfare for a year with 11.2 billion $?</p>
+					<button id="button_social">Show me</button>
+					<div id="first_social" class="cloneObj">
+						<img src="images/socialaid.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_social_addition" class="result_text">
+						<p><span id="group_social_result" class="result_value"></span> people could receive social welfare for a year.</p>
+						<p>In 2012, 16% of the brazilian population lived at or below the poverty line. Even though these figures are decreasing, the level of poverty especially in the favelas and the rural areas in Brazil is still astonishing. Additionally, the income inequality in Brazil is still high. With a Gini coefficient of 59,3, Brazil is among the 8 most unequal distributed countries in the world(Germany has 28,3). The average amount of social welfare based on figures by the "Portal da Transparencia" is 576 US$ per year for each person receiving welfare.</p>
+					</div>
+				</div>
+
+				<div id="group_child" style="display: none;">
+					<div class="stat_heading">
+						How many Children -...?
+					</div>
+					<p>In Brazil, many children have to work instead of attending school. How many children do you think could have been kept from working with 11.2 billion $?</p>
+					<button id="button_child">Show me</button>
+					<div id="first_child" class="cloneObj">
+						<img src="images/child.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_child_addition" class="result_text">
+						<p><span id="group_child_result" class="result_value"></span> kids could have been send to school.</p>
+						<p>Brazil struggles with it's high figures of child labour. Even though education is free in brazil, 3,7% of all children between 5-14 years work at least 18 hours per week. Most of them in the agricultural sector. In 2011, 132000 children between 10 and 14 were responsible for the supply of a household without parents. Our calculations show, that based on figures by the "Portal da Transparencia", a sponsorship for the living costs of a child are 624 US$ per year on average.</p>
+					</div>
+				</div>
+
+				<div id="group_user_input" style="display: none;">
+					<div class="stat_heading">
+						What would you like to buy?
+					</div>
+					<input type="text" value="Sports car" name="user_item_name" id="user_item_name">
+					<input type="number" value="100000" name="user_item_value" id="user_item_value">
+					<button id="button_user_input">Show me</button>
+					<div style="display: none;" id="group_user_addition" class="result_text">
+						You could buy <span id="result_user_item_value" class="result_value"></span> <span id="result_user_item_name"></span>!
+					</div>
+				</div>
+
+				<div id="group_last" style="display:none;">
+					<h2>the show is over</h2>
+					<p>Some Text</p>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Social media sharing icons -->
+    <div id="sharing-button-wrapper" class="tracking" data-tracking="scroll-sharing-icons" style="display: none;">
+        <p id="share-info">Share this story</p>
+        <span><a href="https://www.facebook.com/sharer/sharer.php?u=%URL%" class="share facebook"
+                 target="_blank">Facebook</a></span>
+
+            <span><a href="https://twitter.com/intent/tweet?url=%URL%&amp;text=%TEXT%&amp;hashtags=%HASHTAGS%"
+                     class="share twitter" target="_blank">Twitter</a></span>
+
+        <span><a href="https://plus.google.com/share?url=%URL%" class="share google" target="_blank">Google+</a></span>
+    </div>
+
+	<div id="scroll_top_button">
+		<img src="images/scrollButton.png" />
+	</div>
+</body>
+</html>

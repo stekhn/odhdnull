@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'social';
+  src: url("../font/social.eot");
+  src: url("../font/social.eot#iefix") format('embedded-opentype'), url("../font/social.woff") format('woff'), url("../font/social.ttf") format('truetype'), url("../font/social.svg#social") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#sharing-button-wrapper {
+	margin: 45px 0 70px;
+	text-align: center;
+}
+
+a.share:link, a.share:visited {
+	text-decoration: none;
+	background-color: #ececec;
+	padding: 10px 10px 8px 10px;
+	color: #333;
+	margin-right: 10px;
+}
+
+a.share:hover, a.share:focus {
+	background-color: #cccccc;
+}
+
+a.share:before {
+	font-family: social;
+	content: "T";
+	margin-right: 6px;
+	color: #00abf0;
+}
+
+/** Fallback if the icon fonts are not loading */
+a.twitter:before { content: "T"; color: #00abf0; }
+a.facebook:before { content: "F"; color: #3c599f; }
+a.google:before { content: "G"; color: #da2713; }
