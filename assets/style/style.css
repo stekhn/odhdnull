@@ -138,10 +138,16 @@ input {
 	width: 120px;
 }
 
+<<<<<<< HEAD
 #chart {
 	margin-bottom: 30px;
 }
 
 #share-info {
 	margin:40px;
+=======
+.obj_image {
+	width: 100px;
+	height: 100px;
+>>>>>>> 6c92cedd63812d2cbb9157ee1ea6c8fb77ef3604
 }

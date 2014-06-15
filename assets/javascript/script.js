@@ -54,8 +54,8 @@ $( document ).ready(function(){
   $('#button_administration_assistant').click(function(){
     var units = dublicateItems(per_administration_assistant, 'first_administration_assistant');
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-    $('#group_bus_result').text(units);
-    $('#group_bus_addition').show('slow');
+    $('#group_administration_assistant_result').text(units);
+    $('#group_administration_assistant_addition').show('slow');
     $('#group_bus').show('slow');
   });
 
@@ -65,7 +65,7 @@ $( document ).ready(function(){
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     $('#group_bus_result').text(units);
     $('#group_bus_addition').show('slow');
-    $('#group_nurse').show('slow');
+    $('#group_social').show('slow');
   });
 
 
@@ -81,9 +81,9 @@ $( document ).ready(function(){
   $('#button_child').click(function(){
     var units = dublicateItems(per_child, 'first_child');
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-    $('#group_social_result').text(units);
-    $('#group_social_addition').show('slow');
-    $('#group_user_iput').show('slow');
+    $('#group_child_result').text(units);
+    $('#group_child_addition').show('slow');
+    $('#group_user_input').show('slow');
   });
 
 
