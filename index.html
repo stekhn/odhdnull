@@ -19,7 +19,7 @@
 
 function dublicate(times) {
 for (i = 0; i < times; i++) {
-    $("#first").clone().appendTo("body")
+    $("#first").clone().appendTo("body").show('slow');
 //        .attr("id", "clonedInput" +  cloneIndex)
 //        .find("*").each(function() {
 //            var id = this.id || "";
@@ -35,7 +35,7 @@ for (i = 0; i < times; i++) {
 
  $('#button').click(function(){
     for (i = 0; i < 100; i++) {
-        $("#first").clone().appendTo("body")
+        $("#first").clone().appendTo("body").show('slow');
         }
  });
 </script>
