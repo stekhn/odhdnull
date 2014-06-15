@@ -26,8 +26,9 @@ $(function() {
 		// }
 
 		 $('#button').click(function(){
+		 	console.log("drin");
 		    for (i = 0; i < 100; i++) {
-		        $("#first").clone().append("#page");
+		        $("#first").clone().append("body");
 		        $("#first").clone().show('slow');
 		        }
 		 });
