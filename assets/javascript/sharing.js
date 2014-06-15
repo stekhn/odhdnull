@@ -9,7 +9,7 @@ var sharing = {
 	config: {
 		height: 500,
 		width: 500,
-		url: "https://github.com/walterrenner/odhdnull/tree/gh-pages",
+		url: "http://walterrenner.github.io/odhdnull/",
 		text: "Brazillion - Alternatively investing the world cup billions: ",
 		hashtags: "worldcup",
 		author: "@opendatahackday",
