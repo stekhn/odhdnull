@@ -2,7 +2,7 @@ $( document ).ready(function(){
   // cost for wc and per item
   var total_wc_cost = 11500000000;
   var per_bus = 1000000;
-  var per_nurse = 1000000;
+  var per_nurse = 10000000;
 
   
   /**
@@ -32,13 +32,14 @@ $( document ).ready(function(){
     $('#group_nurse').show('slow');
   });
 
+
   $('#button_nurse').click(function(){
-    for (i = 0; i < 100; i++) {
-      $("#first_nurse").clone().insertAfter('#first_nurse');
-    }
+    var units = dublicateItems(per_nurse, 'first_nurse');
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-    $('#group_last').show('slow');
+    $('#group_nurse_result').text(units);
+    $('#group_nurse_addition').show('slow');
   });
+
 
   $('#button_user_input').click(function(){
     var name = $( "#user_item_name" ).val();
@@ -46,13 +47,13 @@ $( document ).ready(function(){
 
     if (val === "" || val < 1000) {
       alert("please enter a number greater than 1000");
-    } else {
-      for (i = 0; i < val; i++) {
-        $("#first_nurse").clone().insertAfter('#first_nurse');
-      }
-      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-      $('#group_last').show('slow');
     }
+    var itters = Math.ceil( total_wc_cost / val );
+    
+    $('#result_user_item_name').text(name);
+    $('#result_user_item_value').text(itters);
+    $('#group_user_addition').show('slow');
+
   });
 
   $('#scroll_top_button').click(function(){
