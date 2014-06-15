@@ -14,7 +14,14 @@
 		</header>
 		<div id="first" class="cloneObj">bla</div>
 		<button id="button">click</button>
-		</div>
 	</div>
+<script type="text/javascript">
+ $('#button').click(function(){
+    for (i = 0; i < 100; i++) {
+        var $new = $("#first").clone().appendTo("body").hide();
+        $new.show('slow');
+        }
+    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+</script>
 </body>
 </html>
