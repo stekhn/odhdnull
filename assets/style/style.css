@@ -78,6 +78,7 @@ section {
 }
 
 button {
+	cursor: pointer;
 	display: block;
 	border: 0;
 	text-decoration: none;
@@ -88,6 +89,11 @@ button {
 
 button:hover {
 	background-color: #ccc;
+}
+
+.flags:hover {
+	cursor: pointer;
+	opacity: 0.5;
 }
 
 .bus {
