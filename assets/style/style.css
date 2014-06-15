@@ -99,6 +99,7 @@ section {
 
 button {
 	cursor: pointer;
+	position: fixed;
 	display: block;
 	border: 0;
 	text-decoration: none;
@@ -119,10 +120,4 @@ button:hover {
 .bus, .nurse {
 	width: 100px;
 	display: inline-block;
-}
-
-#to_top {
-	position: fixed;
-	right:0;
-	bottom:0;
 }
