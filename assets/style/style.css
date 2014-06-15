@@ -89,7 +89,7 @@ section {
 	font-size: 25px;
 	margin-top: 30px;
 	font-weight: 400;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	text-align: left;
 }
 
@@ -127,22 +127,14 @@ button:hover {
 	bottom:0;
 }
 
-#usersvalue {
+input {
 	background: #fff;
 	border: 3px solid #ececec;
 	padding: 10px;
-	margin: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
 }
 
-select {
-	background: url(../../images/arrow.png) no-repeat right #ececec;
-	-webkit-appearance: none;
-	margin: 10px;
-	width: 140px;
- 	overflow: hidden;
-	border: 0;
-	font-size: 1.2em;
-}
 
 .logo {
 	float: left;
