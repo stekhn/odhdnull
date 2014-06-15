@@ -40,7 +40,83 @@
 				</p>
 			</section>
 			<div id="data">
-				<div id="group_user_input" style="display:block;">
+  var total_wc_cost = 11500000000;
+  var per_nurse = 15852;
+  var per_administration_assistant = 8400;
+  var per_busdriver = 6636;
+  var per_social = 576;
+  var per_child = 624;
+				<div id="group_nurse">
+					<div class="stat_heading">
+						How many Nurses could have been employed for a year?
+					</div>
+					<p>Nurse Text</p>
+					<button id="button_nurse">Show me</button>
+					<div id="first_nurse" class="cloneObj">
+						<img src="images/nurse.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_nurse_addition">
+						You could employe <span id="group_nurse_result"></span> nurses for a year!
+					</div>
+				</div>
+
+				<div id="group_administration_assistant" style="display: none;">
+					<div class="stat_heading">
+						How many Administration Assistants could have been employed for a year?
+					</div>
+					<p>Aministration Assistant Text</p>
+					<button id="button_administration_assistant">Show me</button>
+					<div id="first_administration_assistant" class="cloneObj">
+						<img src="images/administration.jpg" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_administration_assistant_addition">
+						You could employe <span id="group_administration_assistant_result"></span> aministration assistants for a year!
+					</div>
+				</div>
+
+				<div id="group_bus" style="display: none;">
+					<div class="stat_heading">
+						How many Busdrivers could have been employed for a year?
+					</div>
+					<p>Busdriver Text</p>
+					<button id="button_bus">Show me</button>
+					<div id="first_bus" class="cloneObj">
+						<img src="images/bus.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_bus_addition">
+						You could employe <span id="group_bus_result"></span> busdrivers for a year!
+					</div>
+				</div>
+
+				<div id="group_social" style="display: none;">
+					<div class="stat_heading">
+						How many Sozial could have been employed for a year?
+					</div>
+					<p>Social Text</p>
+					<button id="button_social">Show me</button>
+					<div id="first_social" class="cloneObj">
+						<img src="images/socialaid.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_social_addition">
+						You could employe <span id="group_social_result"></span> nurses for a year!
+					</div>
+				</div>
+
+				<div id="group_child" style="display: none;">
+					<div class="stat_heading">
+						How many Children -...?
+					</div>
+					<p>Children Text</p>
+					<button id="button_child">Show me</button>
+					<div id="first_child" class="cloneObj">
+						<img src="images/child.png" class="obj_image" />
+					</div>
+					<div style="display: none;" id="group_child_addition">
+						You could <span id="group_child_result"></span> children for a year!
+					</div>
+				</div>
+
+				<div id="group_user_input" style="display: none;">
 					<div class="stat_heading">
 						What would you like to buy?
 					</div>
@@ -50,39 +126,14 @@
 					<div style="display: none;" id="group_user_addition">
 						You could buy <span id="result_user_item_value"></span> <span id="result_user_item_name"></span>!
 					</div>
-
-				</div>
-				<div id="group_bus">
-					<div class="stat_heading">
-						How many busses could have been bought?
-					</div>
-					<p>bla bla bus</p>
-					<button id="button_bus">Show me</button>
-					<div id="first_bus" class="cloneObj">
-						<img src="images/bus.jpg" class="bus obj_image" />
-					</div>
-					<div style="display: none;" id="group_bus_addition">
-						You could buy <span id="group_bus_result"></span> busses!
-					</div>
 				</div>
 
-				<div id="group_nurse" style="display:none;">
-					<div class="stat_heading">
-						How many nurses could have been bought?
-					</div>
-					<p>bla bla nurse</p>
-					<button id="button_nurse">Show me</button>
-					<div id="first_nurse" class="cloneObj">
-						<img src="images/bus.jpg" class="nurse obj_image" />
-					</div>
-					<div style="display: none;" id="group_nurse_addition">
-						You could buy <span id="group_nurse_result"></span> nurses for a year!
-					</div>
-				</div>
 				<div id="group_last" style="display:none;">
 					<h2>the show is over</h2>
-					<p>bla bla nurse</p>
+					<p>Some Text</p>
 				</div>
+
+
 			</div>
 		</div>
 	</div>
