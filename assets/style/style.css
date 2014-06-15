@@ -149,3 +149,12 @@ input {
 	width: 100px;
 	height: 100px;
 }
+
+.result_value {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+.result_text {
+	margin-top: 20px;
+}
