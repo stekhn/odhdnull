@@ -1,7 +1,7 @@
 $( document ).ready(function(){
   // cost for wc and per item
   var total_wc_cost = 14216790000;
-  var per_bus = 100000000;
+  var per_bus = 100000;
   var per_nurse = 1000000;
 
   $('#button_bus').click(function(){
