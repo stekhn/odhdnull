@@ -27,7 +27,7 @@ $(function() {
 
 		 $('#button').click(function(){
 		    for (i = 0; i < 100; i++) {
-		        $("#first").clone().append("page");
+		        $("#first").clone().append("#page");
 		        $("#first").clone().show('slow');
 		        }
 		 });
