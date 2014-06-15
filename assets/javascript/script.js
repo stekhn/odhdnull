@@ -44,7 +44,7 @@ $( document ).ready(function(){
 
   $('#button_nurse').click(function(){
     var units = dublicateItems(per_nurse, 'first_nurse');
-    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    $("html, body").animate({ scrollTop: $(document).height()}, 1000);
     $('#group_nurse_result').text(units);
     $('#group_nurse_addition').show('slow');
     $('#group_administration_assistant').show('slow');
@@ -53,7 +53,7 @@ $( document ).ready(function(){
 
   $('#button_administration_assistant').click(function(){
     var units = dublicateItems(per_administration_assistant, 'first_administration_assistant');
-    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    $("html, body").animate({ scrollTop: $(document).height()}, 1000);
     $('#group_administration_assistant_result').text(units);
     $('#group_administration_assistant_addition').show('slow');
     $('#group_bus').show('slow');
@@ -62,7 +62,7 @@ $( document ).ready(function(){
 
   $('#button_bus').click(function(){
     var units = dublicateItems(per_busdriver, 'first_bus');
-    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    $("html, body").animate({ scrollTop: $(document).height()}, 1000);
     $('#group_bus_result').text(units);
     $('#group_bus_addition').show('slow');
     $('#group_social').show('slow');
@@ -71,7 +71,7 @@ $( document ).ready(function(){
 
   $('#button_social').click(function(){
     var units = dublicateItems(per_social, 'first_social');
-    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    $("html, body").animate({ scrollTop: $(document).height()}, 1000);
     $('#group_social_result').text(units);
     $('#group_social_addition').show('slow');
     $('#group_child').show('slow');
@@ -80,7 +80,7 @@ $( document ).ready(function(){
 
   $('#button_child').click(function(){
     var units = dublicateItems(per_child, 'first_child');
-    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    $("html, body").animate({ scrollTop: $(document).height()}, 1000);
     $('#group_child_result').text(units);
     $('#group_child_addition').show('slow');
     $('#group_user_input').show('slow');
