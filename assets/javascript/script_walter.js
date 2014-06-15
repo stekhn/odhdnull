@@ -6,7 +6,6 @@ $( document ).ready(function(){
 
   $('#button_bus').click(function(){
     dublicateItems(per_bus, 'first_bus');
-
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
     $('#group_nurse').show('slow');
   });
@@ -39,6 +38,10 @@ $( document ).ready(function(){
 
   function dublicateItems (item_cost, itemId) {
     var itters = Math.ceil( total_wc_cost / item_cost );
+    console.log(itters);
+    if (itters > 1000) {
+      itters = 1000;
+    }
     for (i = 0; i < itters; i++) {
       $('#' + itemId).clone().insertAfter('#' + itemId);
     }
