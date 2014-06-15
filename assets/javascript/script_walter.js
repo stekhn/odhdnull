@@ -15,6 +15,7 @@ $( document ).ready(function(){
 	        $("#first").clone().insertAfter('#first');
 	    }
 	    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+	    $('group_nurse').show():
 	});
 
 });
