@@ -9,10 +9,12 @@
 	<script type="text/javascript" src="assets/javascript/libs/nv.d3.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/libs/countUp.js"></script>
 	<script type="text/javascript" src="assets/javascript/script.js"></script>
+	<script type="text/javascript" src="assets/javascript/sharing.js"></script>
 	<script type="text/javascript" src="assets/javascript/piechart.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/style/reset.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/style/sharing.css">
 	<link rel="stylesheet" type="text/css" href="assets/javascript/libs/nv.d3.min.css">
 </head>
 <body>
@@ -24,7 +26,6 @@
 		</div>
 		<div id="content">
 			<header>
-				<img class="logo" src="images/logo.png" alt="Brazillion Logo" />
 				<div id="heading">Brazillion</div>
 				<div id="subheading">How the world cup billions could have helped Brazil.</div>
 			</header>
@@ -40,8 +41,6 @@
 					Im evendae volor auditis dus ipsumet quibusa menihitatur:
 				</p>
 				<svg style="height:300px; width:640px;" id="chart"></svg>
-
-				<img class="d3placeholder" src="images/D3_Placeholder.png" />
 				<p>
 					Even though soccer is a religion in Brazil, not everybody welcomed the decision of the nation hosting the world cup. As Brazil is still a threshold country, we (like many Brazilians) were wondering if there weren't any better options to invest the money.
 				</p>
@@ -145,6 +144,19 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Social media sharing icons -->
+    <div id="sharing-button-wrapper" class="tracking" data-tracking="scroll-sharing-icons">
+        <p id="share-info">Share this story</p>
+        <span><a href="https://www.facebook.com/sharer/sharer.php?u=%URL%" class="share facebook"
+                 target="_blank">Facebook</a></span>
+
+            <span><a href="https://twitter.com/intent/tweet?url=%URL%&amp;text=%TEXT%&amp;hashtags=%HASHTAGS%"
+                     class="share twitter" target="_blank">Twitter</a></span>
+
+        <span><a href="https://plus.google.com/share?url=%URL%" class="share google" target="_blank">Google+</a></span>
+    </div>
+
 	<div id="scroll_top_button">
 		<img src="images/scrollButton.png" />
 	</div>

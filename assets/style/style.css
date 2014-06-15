@@ -85,6 +85,8 @@ section {
 }
 
 button {
+	margin: 20px 0;
+	font-size: 1em;
 	cursor: pointer;
 	display: block;
 	border: 0;
@@ -131,10 +133,12 @@ input {
 	margin-bottom: 20px;
 }
 
-.logo {
-	float: left;
-	height: 120px;
-	width: 120px;
+#chart {
+	margin-bottom: 30px;
+}
+
+#share-info {
+	margin:40px;
 }
 
 .obj_image {
