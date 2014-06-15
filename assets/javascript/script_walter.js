@@ -6,6 +6,7 @@ $( document ).ready(function(){
 	        $("#first_bus").clone().insertAfter('#first_bus');
 	    }
 	    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+	   	$('group_nurse').show():
 	});
 
 	 $('#button_nurse').click(function(){
