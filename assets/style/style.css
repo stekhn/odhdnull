@@ -1,9 +1,76 @@
 html {
-	font-family: sans-serif;
+	
 }
 
 body {
-	background-color: lightgrey;
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#page {
+	width: 960px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+/*	border-radius: 5px;*/
+	padding: 20px;
+	text-align: center;
+}
+
+#content {
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: white;
+	width: 640px;
+}
+
+#flags {
+	float: right;
+}
+
+.flags {
+	width: 30px;
+	margin-right: 6px;
+}
+
+#heading {
+	font-size: 60px;
+	font-weight: 500;
+}
+
+#subheading {
+	font-size: 20px;
+	margin-top: 20px;
+	font-weight: 400;
+}
+
+section {
+	margin-top: 20px;
+	text-align: left;
+	font-weight: 300;
+}
+
+.count {
+	font-size: 70px;
+	color: #4d63bc;
+	font-weight: 300;
+	display: inline-block;
+	margin-top: 35px;
+	margin-right: 20px;
+	margin-bottom: 35px;
+}
+
+.d3placeholder {
+	width: 600px;
+}
+
+.stat_heading {
+	text-align: left;
+	font-size: 25px;
+	margin-top: 30px;
+	font-weight: 400;
+	margin-bottom: 40px;
 }
 
 .clone_obj {
@@ -14,23 +81,6 @@ button {
 	display: block;
 }
 
-#page {
-	width: 1024px;
-	margin: 0 auto;
-	background-color: white;
-	border-radius: 5px;
-	padding: 20px;
-}
-
 .bus {
 	width: 100px;
-}
-
-.count {
-	font-size: 100px;
-	color: #4d63bc;
-	font-weight: 300;
-	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-	display: inline-block;
-	margin-right: 30px;
 }
