@@ -35,9 +35,10 @@ for (i = 0; i < times; i++) {
 
  $('#button').click(function(){
     for (i = 0; i < 100; i++) {
-        $("#first").clone().append("body")
-        $("#first").clone().show('slow');
+        var $new = $("#first").clone().appendTo("body").hide();
+        $new.show('slow');
         }
+    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
  });
 </script>
 </body>
