@@ -6,7 +6,7 @@ body {
 	background-color: lightgrey;
 }
 
-#first {
+.clone_obj {
 	display: inline-block;
 }
 
