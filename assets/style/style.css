@@ -76,7 +76,7 @@ section {
 	margin-bottom: 40px;
 }
 
-.clone_obj {
+.cloneObj {
 	display: inline-block;
 }
 
@@ -99,7 +99,13 @@ button:hover {
 	opacity: 0.5;
 }
 
-.bus {
+.bus, .nurse {
 	width: 100px;
 	display: inline-block;
+}
+
+#to_top {
+	position: fixed;
+	right:0;
+	bottom:0;
 }

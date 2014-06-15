@@ -1,30 +1,69 @@
 $( document ).ready(function(){
-	
-	/**
-	 * Counter
-	 */
+  // cost for wc and per item
+  var total_wc_cost = 11500000000;
+  var per_bus = 1000000;
+  var per_nurse = 1000000;
 
-	var options = {
-	  useEasing : true, 
-	  useGrouping : true, 
-	  separator : '.', 
-	  decimal : '.' 
-	};
+  
+  /**
+   * Counter
+   */
 
-	var demo = new countUp("count", 0, 14216790000, 0, 1.5, options);
-	demo.start();
+  var options = {
+    useEasing : true,
+    useGrouping : true,
+    separator : '.',
+    decimal : '.'
+  };
 
-	/**
-	 * Button Handle
-	 */
+  var demo = new countUp("count", 0, total_wc_cost, 0, 1.5, options);
+  demo.start();
 
-	$('#button').click(function(){
-	    for (i = 0; i < 1000; i++) {
-	        //var $new = $("#first").clone().appendTo("#data").hide();
-	        //$new.show();
-	        $("#first").clone().insertAfter('#first');
-	    }
-	    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
-	});
+  /**
+   * Button Handle
+   */
+
+
+  $('#button_bus').click(function(){
+    dublicateItems(per_bus, 'first_bus');
+    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    $('#group_nurse').show('slow');
+  });
+
+  $('#button_nurse').click(function(){
+    for (i = 0; i < 100; i++) {
+      $("#first_nurse").clone().insertAfter('#first_nurse');
+    }
+    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    $('#group_last').show('slow');
+  });
+
+  $('#button_user_input').click(function(){
+    var val = $( "#usersvalue" ).val();
+    if (val === "" || val < 1000) {
+      alert("please enter a number greater than 1000");
+    } else {
+      for (i = 0; i < val; i++) {
+        $("#first_nurse").clone().insertAfter('#first_nurse');
+      }
+      $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+      $('#group_last').show('slow');
+    }
+  });
+
+  $('#scroll_top_button').click(function(){
+    $( "html, body" ).scrollTop(0);
+  });
+
+
+  function dublicateItems (item_cost, itemId) {
+    var itters = Math.ceil( total_wc_cost / item_cost );
+    console.log(itters);
+    if (itters > 1000) {
+      itters = 1000;
+    }
+    for (i = 0; i < itters; i++) {
+      $('#' + itemId).clone().insertAfter('#' + itemId);
+    }
+  }
 });
-
