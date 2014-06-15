@@ -85,6 +85,7 @@ section {
 }
 
 button {
+	margin: 20px 0;
 	font-size: 1em;
 	cursor: pointer;
 	display: block;
