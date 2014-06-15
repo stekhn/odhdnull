@@ -85,6 +85,7 @@ section {
 }
 
 button {
+	font-size: 1em;
 	cursor: pointer;
 	display: block;
 	border: 0;
@@ -135,4 +136,12 @@ input {
 	float: left;
 	height: 120px;
 	width: 120px;
+}
+
+#chart {
+	margin-bottom: 30px;
+}
+
+#share-info {
+	margin:40px;
 }

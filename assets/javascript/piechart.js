@@ -29,6 +29,9 @@ nv.addGraph(function() {
         .transition().duration(350)
         .call(chart);
 
+    d3.select(".nv-legendWrap")
+        .attr("transform", "translate(0,240)");
+
   return chart;
 });
 
