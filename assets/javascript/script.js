@@ -25,8 +25,10 @@ $( document ).ready(function(){
 
 
   $('#button_bus').click(function(){
-    dublicateItems(per_bus, 'first_bus');
+    var units = dublicateItems(per_bus, 'first_bus');
     $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+    $('#group_bus_result').text(units);
+    $('#group_bus_addition').show('slow');
     $('#group_nurse').show('slow');
   });
 
@@ -39,7 +41,9 @@ $( document ).ready(function(){
   });
 
   $('#button_user_input').click(function(){
-    var val = $( "#usersvalue" ).val();
+    var name = $( "#user_item_name" ).val();
+    var val = $( "#user_item_value" ).val();
+
     if (val === "" || val < 1000) {
       alert("please enter a number greater than 1000");
     } else {
@@ -56,14 +60,15 @@ $( document ).ready(function(){
   });
 
 
-  function dublicateItems (item_cost, itemId) {
+  function dublicateItems(item_cost, itemId) {
+    var max_itters = 1000;
     var itters = Math.ceil( total_wc_cost / item_cost );
-    console.log(itters);
-    if (itters > 1000) {
-      itters = 1000;
+    if (itters < max_itters) {
+      max_itters = itters;
     }
-    for (i = 0; i < itters; i++) {
+    for (i = 0; i < max_itters; i++) {
       $('#' + itemId).clone().insertAfter('#' + itemId);
     }
+    return itters;
   }
 });

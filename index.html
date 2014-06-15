@@ -38,42 +38,51 @@
 				<img class="d3placeholder" src="images/D3_Placeholder.png" />
 				<p>
 			</section>
-			<div class="stat_heading">
-				How many busses could have been bought?
-			</div>
 			<div id="data">
-			<div id="group_user_input" style="display:block;">
-				<h2>User Input</h2>
-				<select>
-				  <option value="beer">Beer</option>
-				  <option value="some">bla</option>
-				</select>
-				<input type="number" name="usersvalue" id="usersvalue">
-				<button id="button_user_input">Show me</button>
-			</div>
-			<div id="group_bus">
-				<h2>Bus</h2>
-				<p>bla bla bus</p>
-				<button id="button_bus">Show me</button>
-				<div id="first_bus" class="cloneObj">
-					<img src="images/bus.jpg" class="bus obj_image" />
+				<div id="group_user_input" style="display:block;">
+					<div class="stat_heading">
+						How many busses could have been bought?
+					</div>
+					<select>
+					  <option value="beer">Beer</option>
+					  <option value="some">bla</option>
+					</select>
+					<input type="number" name="usersvalue" id="usersvalue">
+					<button id="button_user_input">Show me</button>
 				</div>
-			</div>
-			<div id="group_nurse" style="display:none;">
-				<h2>Nurse</h2>
-				<p>bla bla nurse</p>
-				<button id="button_nurse">Show me</button>
-				<div id="first_nurse" class="cloneObj">
-					<img src="images/bus.jpg" class="nurse obj_image" />
+				<div id="group_bus">
+					<div class="stat_heading">
+						How many busses could have been bought?
+					</div>
+					<p>bla bla bus</p>
+					<button id="button_bus">Show me</button>
+					<div id="first_bus" class="cloneObj">
+						<img src="images/bus.jpg" class="bus obj_image" />
+					</div>
+					<div style="display: none;" id="group_bus_addition">
+						You could buy <span id="group_bus_result"></span> busses!
+					</div>
 				</div>
-			</div>
-			<div id="group_last" style="display:none;">
-				<h2>the show is over</h2>
-				<p>bla bla nurse</p>
-			</div>
+				<div id="group_nurse" style="display:none;">
+					<div class="stat_heading">
+						How many busses could have been bought?
+					</div>
+				</div>
+				<div id="group_nurse" style="display:none;">
+					<h2>Nurse</h2>
+					<p>bla bla nurse</p>
+					<button id="button_nurse">Show me</button>
+					<div id="first_nurse" class="cloneObj">
+						<img src="images/bus.jpg" class="nurse obj_image" />
+					</div>
+				</div>
+				<div id="group_last" style="display:none;">
+					<h2>the show is over</h2>
+					<p>bla bla nurse</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div id="to_top"><a href="#">to top</a></div>
+	<div id="scroll_top_button"></div>
 </body>
 </html>
