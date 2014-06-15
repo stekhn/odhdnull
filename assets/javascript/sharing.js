@@ -28,7 +28,6 @@
 
 	// Replace the placeholder in the sharing link with the URL to be shared
 	function replaceUrl(el) {
-
         var url = this.config.url;
 		var oldUrl = el.href;
 		var newUrl = oldUrl
