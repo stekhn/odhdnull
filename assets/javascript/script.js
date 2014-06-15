@@ -1,35 +1,9 @@
-$(function() {
-    //Code
- //    function appendTitles() {
-	// 	for (var i=1; i<=4; i++) {
- //  			$('#data-viz').append('<img class="busses" src='images/bus.png'>');
- // 		}
-	// }
-
-
-			//var cloneIndex = $(".cloneObj").length;
-
-		// function dublicate(times) {
-		// for (i = 0; i < times; i++) {
-		//     $("#first").clone().appendTo("body").show('slow');
-		//        .attr("id", "clonedInput" +  cloneIndex)
-		//        .find("*").each(function() {
-		//            var id = this.id || "";
-		//            var match = id.match(regex) || [];
-		//            if (match.length == 3) {
-		//                this.id = match[1] + (cloneIndex);
-		//            }
-		//        }
-		//    cloneIndex++;
-
-		//     }
-		// }
-
-		 $('#button').click(function(){
-		 	console.log("drin");
-		    for (i = 0; i < 100; i++) {
-		        $("#first").clone().append("body");
-		        $("#first").clone().show('slow');
-		        }
-		 });
+ $('#button').click(function(){
+    for (i = 0; i < 1000; i++) {
+        //var $new = $("#first").clone().appendTo("#data").hide();
+        //$new.show();
+        $("#first").clone().insertAfter('#first');
+    }
+    $("body").animate({ scrollTop: $(document).height() }, 1000);
 });
+
