@@ -3,7 +3,15 @@
 
 	var config = {
 		height: 500,
-		width: 500
+		width: 500,
+		url: "http://www.sz.de/tiananmen",
+		text: "Digitalreportage zum Jahrestag des Tiananmen-Massakers:",
+		hashtags: "tiananmen",
+		author: "von @SZ",
+		link: "a.share",
+		textPlaceholder: "%TEXT%",
+		hashtagsPlaceholder: "%HASHTAGS%",
+		urlPlaceholder: "%URL%"
 	};
 
 	function init() {
@@ -18,6 +26,18 @@
 		}
 	}
 
+	// Replace the placeholder in the sharing link with the URL to be shared
+	function replaceUrl(el) {
+
+        var url = this.config.url;
+		var oldUrl = el.href;
+		var newUrl = oldUrl
+			.replace(this.config.urlPlaceholder, url)
+			.replace(this.config.textPlaceholder,
+				this.config.text.split(' ').join('+') + ' ' + url + ' ' + this.config.author)
+			.replace(this.config.hashtagsPlaceholder, this.config.hashtags);
+		el.href = encodeURI(newUrl);
+	}
 
 	// Opens the sharing link in a new popup
 	function openPopup(e) {
