@@ -42,6 +42,7 @@ body {
 #subheading {
 	font-size: 20px;
 	margin-top: 20px;
+	margin-bottom: 40px;
 	font-weight: 400;
 }
 
@@ -73,7 +74,7 @@ section {
 	font-size: 25px;
 	margin-top: 30px;
 	font-weight: 400;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	text-align: left;
 }
 
@@ -105,12 +106,6 @@ button:hover {
 	display: inline-block;
 }
 
-/*#scroll_top_button {
-	position: fixed;
-	right:0;
-	bottom:0;
-}*/
-
 #scroll_top_button{
     position:fixed;
     bottom: 10px;
@@ -124,4 +119,18 @@ button:hover {
 #scroll_top_button img{
 	width: 50px;
 	cursor: pointer;
+}
+
+input {
+	background: #fff;
+	border: 3px solid #ececec;
+	padding: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.logo {
+	float: left;
+	height: 120px;
+	width: 120px;
 }
