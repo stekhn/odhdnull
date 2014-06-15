@@ -41,7 +41,7 @@ body {
 
 #subheading {
 	font-size: 20px;
-	margin-top: 20px;
+	margin: 20px 0 40px 0;
 	font-weight: 400;
 }
 
@@ -142,5 +142,11 @@ select {
  	overflow: hidden;
 	border: 0;
 	font-size: 1.2em;
+}
+
+.logo {
+	float: left;
+	height: 120px;
+	width: 120px;
 }
 
