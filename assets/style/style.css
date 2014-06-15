@@ -126,3 +126,21 @@ button:hover {
 	right:0;
 	bottom:0;
 }
+
+#usersvalue {
+	background: #fff;
+	border: 3px solid #ececec;
+	padding: 10px;
+	margin: 10px;
+}
+
+select {
+	background: url(../../images/arrow.png) no-repeat right #ececec;
+	-webkit-appearance: none;
+	margin: 10px;
+	width: 140px;
+ 	overflow: hidden;
+	border: 0;
+	font-size: 1.2em;
+}
+
