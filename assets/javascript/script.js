@@ -5,7 +5,7 @@ $( document ).ready(function(){
 	        //$new.show();
 	        $("#first").clone().insertAfter('#first');
 	    }
-	    $("body").animate({ scrollTop: $(document).height() }, 1000);
+	    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
 	});
 });
 
