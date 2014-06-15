@@ -6,6 +6,14 @@ body {
 	background-color: lightgrey;
 }
 
+#count {
+	font-size: 12em;
+	margin: 0;
+	color: #4d63bc;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
 #first {
 	display: inline-block;
 }
