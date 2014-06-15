@@ -2,9 +2,9 @@ nv.addGraph(function() {
   var chart = nv.models.pieChart()
       .x(function(d) { return d.label })
       .y(function(d) { return d.value })
-      .showLabels(true);
+      .showLabels(false);
 
-    d3.select("#chart svg")
+    d3.select("#chart")
         .datum(exampleData())
         .transition().duration(350)
         .call(chart);
